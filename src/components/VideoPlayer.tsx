@@ -20,11 +20,11 @@ const VideoPlayer = () => {
           <img 
             src={`https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`} 
             alt="Video Thumbnail" 
-            className="w-full h-full object-cover opacity-80 transition-transform duration-500 group-hover:scale-105"
+            className="w-full h-full object-cover opacity-85 transition-transform duration-500 group-hover:scale-105"
           />
           
           {/* Gradient overlay */}
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/20" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-black/30" />
 
           {/* Play Button */}
           <div className="absolute inset-0 flex items-center justify-center">
@@ -32,20 +32,19 @@ const VideoPlayer = () => {
               <Play className="w-8 h-8 text-topbar-foreground ml-1 fill-current" />
             </div>
           </div>
-
-          {/* Professional Progress Bar (Fake) */}
-          <div className="absolute bottom-0 left-0 right-0 h-1.5 bg-white/20">
-            <div className="h-full bg-topbar w-[2%] animate-pulse" />
-          </div>
         </div>
       ) : (
         <iframe
           className="w-full h-full"
-          src={`https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0&modestbranding=1&showinfo=0`}
-          title="YouTube video player"
+          src={`https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0&modestbranding=1&showinfo=0&controls=0&fs=0`}
+          title="Video"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen
+          style={{
+            border: 'none',
+            borderRadius: '1rem',
+          }}
         ></iframe>
       )}
     </div>
