@@ -23,7 +23,7 @@ const Index = () => {
         {/* HERO */}
         <header className="text-center mb-10 flex flex-col items-center">
           <h1 className="text-3xl md:text-4xl lg:text-[42px] font-extrabold leading-[1.1] tracking-[-0.02em] text-balance mb-6">
-            Atenção: Se você busca conselhos amorosos com homens, está fadada ao fracasso...
+            Atenção: Se você busca conselhos amorosos com homens, está fadado ao fracasso...
           </h1>
 
           <h2 className="text-xl md:text-2xl font-semibold text-muted-foreground leading-snug text-balance mb-4">
