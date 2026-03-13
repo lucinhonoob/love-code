@@ -5,6 +5,8 @@ import VideoPlayer from '@/components/VideoPlayer';
 import ScenarioCard from '@/components/ScenarioCard';
 import Testimonials from '@/components/Testimonials';
 import FAQ from '@/components/FAQ';
+import CountdownTimer from '@/components/CountdownTimer';
+import PurchaseNotification from '@/components/PurchaseNotification';
 
 const Index = () => {
   const checkoutUrl = "https://pay.cakto.com.br/3fcmq6k_804816";
@@ -39,6 +41,9 @@ const Index = () => {
             ATENÇÃO! Esta apresentação poderá ser removida a qualquer momento...
           </p>
         </header>
+
+        {/* COUNTDOWN TIMER */}
+        <CountdownTimer />
 
         {/* CORPO DA COPY */}
         <article className="max-w-[700px] mx-auto text-lg leading-[1.7] text-foreground/90 space-y-6">
@@ -176,6 +181,9 @@ const Index = () => {
           </div>
         </div>
       </footer>
+
+      {/* PURCHASE NOTIFICATIONS */}
+      <PurchaseNotification />
     </div>
   );
 };
