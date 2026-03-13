@@ -31,7 +31,7 @@ const Index = () => {
           </h2>
 
           <p className="text-base md:text-lg text-muted-foreground max-w-[700px] mb-8 text-pretty">
-            A maioria dos homens aprende a fazer isso — e isso acaba com a atração instantaneamente. Neste treinamento gratuito, você descobrirá como despertar o desejo instantaneamente.
+            A maioria dos homens aprende a fazer isso — e isso acaba com a atração instantaneamente. Você descobrirá como despertar o desejo instantaneamente.
           </p>
 
           <VideoPlayer />
