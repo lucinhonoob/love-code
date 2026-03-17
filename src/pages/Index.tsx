@@ -11,9 +11,6 @@ import PurchaseNotification from '@/components/PurchaseNotification';
 const Index = () => {
   const checkoutUrl = "https://pay.cakto.com.br/3fcmq6k_804816";
 
-  const handleCheckout = () => {
-    window.location.href = checkoutUrl;
-  };
 
   return (
     <div className="min-h-screen bg-background text-foreground font-sans selection:bg-red-100 selection:text-red-900">
