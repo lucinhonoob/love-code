@@ -10,7 +10,6 @@ const CountdownTimer = () => {
 
   useEffect(() => {
     const calculateTimeLeft = () => {
-      // Calculate time until midnight
       const now = new Date();
       const tomorrow = new Date(now);
       tomorrow.setDate(tomorrow.getDate() + 1);
@@ -36,50 +35,49 @@ const CountdownTimer = () => {
   const formatTime = (num: number) => String(num).padStart(2, '0');
 
   return (
-    <div className="bg-gradient-to-r from-red-600 to-red-700 text-white rounded-2xl p-6 my-8 border-2 border-red-500 shadow-lg">
-      <div className="flex items-center justify-between gap-4">
-        <div className="flex items-center gap-3">
-          <Clock className="w-6 h-6 animate-pulse" />
+    <div className="bg-gradient-to-r from-red-600 to-red-700 text-white rounded-2xl p-4 sm:p-6 my-6 sm:my-8 border-2 border-red-500 shadow-lg">
+      <div className="flex flex-col sm:flex-row items-center sm:justify-between gap-3 sm:gap-4">
+        <div className="flex items-center gap-3 text-center sm:text-left">
+          <Clock className="w-5 sm:w-6 h-5 sm:h-6 animate-pulse shrink-0" />
           <div>
-            <p className="text-sm font-bold opacity-90 uppercase tracking-wide">
+            <p className="text-xs sm:text-sm font-bold opacity-90 uppercase tracking-wide">
               ⏰ Oferta Expira Em:
             </p>
-            <p className="text-xs opacity-75">
+            <p className="text-[10px] sm:text-xs opacity-75">
               Após a meia-noite, o preço especial desaparece
             </p>
           </div>
         </div>
 
-        <div className="flex gap-2 bg-black/30 rounded-lg p-3">
+        <div className="flex gap-2 bg-black/30 rounded-lg p-2 sm:p-3">
           <div className="text-center">
-            <div className="text-2xl md:text-3xl font-black tabular-nums">
+            <div className="text-xl sm:text-2xl md:text-3xl font-black tabular-nums">
               {formatTime(timeLeft.hours)}
             </div>
-            <div className="text-xs font-bold opacity-75 uppercase">Horas</div>
+            <div className="text-[10px] sm:text-xs font-bold opacity-75 uppercase">Horas</div>
           </div>
 
-          <div className="text-2xl md:text-3xl font-black opacity-50">:</div>
+          <div className="text-xl sm:text-2xl md:text-3xl font-black opacity-50">:</div>
 
           <div className="text-center">
-            <div className="text-2xl md:text-3xl font-black tabular-nums">
+            <div className="text-xl sm:text-2xl md:text-3xl font-black tabular-nums">
               {formatTime(timeLeft.minutes)}
             </div>
-            <div className="text-xs font-bold opacity-75 uppercase">Min</div>
+            <div className="text-[10px] sm:text-xs font-bold opacity-75 uppercase">Min</div>
           </div>
 
-          <div className="text-2xl md:text-3xl font-black opacity-50">:</div>
+          <div className="text-xl sm:text-2xl md:text-3xl font-black opacity-50">:</div>
 
           <div className="text-center">
-            <div className="text-2xl md:text-3xl font-black tabular-nums">
+            <div className="text-xl sm:text-2xl md:text-3xl font-black tabular-nums">
               {formatTime(timeLeft.seconds)}
             </div>
-            <div className="text-xs font-bold opacity-75 uppercase">Seg</div>
+            <div className="text-[10px] sm:text-xs font-bold opacity-75 uppercase">Seg</div>
           </div>
         </div>
       </div>
 
-      {/* Animated warning bar */}
-      <div className="mt-4 h-1 bg-white/20 rounded-full overflow-hidden">
+      <div className="mt-3 sm:mt-4 h-1 bg-white/20 rounded-full overflow-hidden">
         <div
           className="h-full bg-white animate-pulse"
           style={{

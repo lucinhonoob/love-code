@@ -7,33 +7,42 @@ import Testimonials from '@/components/Testimonials';
 import FAQ from '@/components/FAQ';
 import CountdownTimer from '@/components/CountdownTimer';
 import PurchaseNotification from '@/components/PurchaseNotification';
+import confetti from 'canvas-confetti';
 
 const Index = () => {
   const checkoutUrl = "https://pay.cakto.com.br/3fcmq6k_804816";
 
+  const handleCtaClick = () => {
+    confetti({
+      particleCount: 150,
+      spread: 80,
+      origin: { y: 0.6 },
+      colors: ['#16a34a', '#22c55e', '#4ade80', '#fbbf24', '#f59e0b'],
+    });
+  };
 
   return (
     <div className="min-h-screen bg-background text-foreground font-sans selection:bg-red-100 selection:text-red-900">
       <TopBar />
 
-      <main className="max-w-[800px] mx-auto px-5 pt-12 pb-24">
+      <main className="max-w-[800px] mx-auto px-4 sm:px-5 pt-8 sm:pt-12 pb-16 sm:pb-24">
         {/* HERO */}
-        <header className="text-center mb-10 flex flex-col items-center">
-          <h1 className="text-3xl md:text-4xl lg:text-[42px] font-extrabold leading-[1.1] tracking-[-0.02em] text-balance mb-6">
+        <header className="text-center mb-8 sm:mb-10 flex flex-col items-center">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-[42px] font-extrabold leading-[1.1] tracking-[-0.02em] text-balance mb-4 sm:mb-6">
             Atenção: Se você busca conselhos amorosos com homens, está fadado ao fracasso...
           </h1>
 
-          <h2 className="text-xl md:text-2xl font-semibold text-muted-foreground leading-snug text-balance mb-4">
+          <h2 className="text-lg sm:text-xl md:text-2xl font-semibold text-muted-foreground leading-snug text-balance mb-3 sm:mb-4">
             Quer que ela corra atrás de você? Então pare de fazer esta única coisa...
           </h2>
 
-          <p className="text-base md:text-lg text-muted-foreground max-w-[700px] mb-8 text-pretty">
+          <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-[700px] mb-6 sm:mb-8 text-pretty">
             A maioria dos homens aprende a fazer isso — e isso acaba com a atração instantaneamente. Você descobrirá como despertar o desejo instantaneamente.
           </p>
 
           <VideoPlayer />
 
-          <p className="text-sm font-medium text-muted-foreground mt-4 flex items-center gap-1.5">
+          <p className="text-xs sm:text-sm font-medium text-muted-foreground mt-4 flex items-center gap-1.5">
             <span className="w-2 h-2 rounded-full bg-topbar animate-pulse" />
             ATENÇÃO! Esta apresentação poderá ser removida a qualquer momento...
           </p>
@@ -43,7 +52,7 @@ const Index = () => {
         <CountdownTimer />
 
         {/* CORPO DA COPY */}
-        <article className="max-w-[700px] mx-auto text-lg leading-[1.7] text-foreground/90 space-y-6">
+        <article className="max-w-[700px] mx-auto text-base sm:text-lg leading-[1.7] text-foreground/90 space-y-5 sm:space-y-6">
           <p>
             É um mito completo que você precise ser bonito, rico ou ter um corpo de modelo para atrair mulheres incrivelmente lindas.
           </p>
@@ -59,8 +68,8 @@ const Index = () => {
           </p>
 
           {/* 3 CENÁRIOS */}
-          <div className="my-12 space-y-4">
-            <h3 className="text-xl font-bold text-foreground mb-6">
+          <div className="my-8 sm:my-12 space-y-3 sm:space-y-4">
+            <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4 sm:mb-6">
               Você se identifica com algum destes 3 cenários?
             </h3>
 
@@ -87,8 +96,8 @@ const Index = () => {
             Se você disse "sim" para qualquer um desses cenários, a culpa não é sua. A sociedade ensinou os homens a agirem exatamente da maneira que <strong>desliga</strong> a atração feminina.
           </p>
 
-          <div className="bg-muted/50 p-6 rounded-xl border border-border my-8">
-            <h4 className="font-bold text-xl mb-4 flex items-center gap-2">
+          <div className="bg-muted/50 p-4 sm:p-6 rounded-xl border border-border my-6 sm:my-8">
+            <h4 className="font-bold text-lg sm:text-xl mb-3 sm:mb-4 flex items-center gap-2">
               <Zap className="text-topbar w-5 h-5 fill-current" />
               O que você vai aprender hoje:
             </h4>
@@ -99,7 +108,7 @@ const Index = () => {
                 "O erro #1 que 99% dos homens cometem no primeiro encontro",
                 "Como fazer ela visualizar um futuro romântico com você em minutos"
               ].map((item, i) => (
-                <li key={i} className="flex items-start gap-3 text-base">
+                <li key={i} className="flex items-start gap-3 text-sm sm:text-base">
                   <CheckCircle2 className="text-green-600 w-5 h-5 mt-0.5 shrink-0" />
                   <span>{item}</span>
                 </li>
@@ -112,25 +121,25 @@ const Index = () => {
           </p>
 
           {/* CTA PRINCIPAL */}
-          <div className="pt-8 pb-4 flex flex-col items-center gap-4">
+          <div className="pt-6 sm:pt-8 pb-4 flex flex-col items-center gap-4">
             <Button 
               variant="cta" 
               size="xl" 
-              className="w-full sm:w-auto font-bold text-xl py-8 px-12 shadow-cta hover:shadow-cta-hover transition-all animate-bounce"
+              className="w-full sm:w-auto font-bold text-lg sm:text-xl py-7 sm:py-8 px-8 sm:px-12 shadow-cta hover:shadow-cta-hover transition-all animate-bounce"
               asChild
             >
-              <a href={checkoutUrl}>
+              <a href={checkoutUrl} onClick={handleCtaClick}>
                 QUERO ACESSO AO MÉTODO AGORA
-                <ArrowRight className="ml-2 w-6 h-6" />
+                <ArrowRight className="ml-2 w-5 sm:w-6 h-5 sm:h-6" />
               </a>
             </Button>
             
-            <div className="flex flex-wrap justify-center gap-6 mt-4">
-              <div className="flex items-center gap-1.5 text-sm text-muted-foreground">
+            <div className="flex flex-wrap justify-center gap-4 sm:gap-6 mt-4">
+              <div className="flex items-center gap-1.5 text-xs sm:text-sm text-muted-foreground">
                 <ShieldCheck className="w-4 h-4 text-green-600" />
                 Compra 100% Segura
               </div>
-              <div className="flex items-center gap-1.5 text-sm text-muted-foreground">
+              <div className="flex items-center gap-1.5 text-xs sm:text-sm text-muted-foreground">
                 <CheckCircle2 className="w-4 h-4 text-green-600" />
                 Acesso Imediato
               </div>
@@ -145,13 +154,13 @@ const Index = () => {
         <FAQ />
 
         {/* GARANTIA */}
-        <div className="max-w-[700px] mx-auto mt-16 border-t border-border pt-12 text-center">
+        <div className="max-w-[700px] mx-auto mt-12 sm:mt-16 border-t border-border pt-8 sm:pt-12 text-center">
           <div className="inline-block p-4 bg-background border-2 border-dashed border-muted-foreground/30 rounded-full mb-6">
             <span className="text-3xl font-bold">7</span>
             <span className="block text-[10px] uppercase tracking-widest font-bold">Dias de Garantia</span>
           </div>
-          <h3 className="text-xl font-bold mb-4">Risco Zero para Você</h3>
-          <p className="text-base text-muted-foreground max-w-[600px] mx-auto mb-8">
+          <h3 className="text-lg sm:text-xl font-bold mb-4">Risco Zero para Você</h3>
+          <p className="text-sm sm:text-base text-muted-foreground max-w-[600px] mx-auto mb-6 sm:mb-8">
             Se em até 7 dias você não sentir que sua vida amorosa mudou completamente, basta enviar um e-mail e devolvemos 100% do seu investimento. Sem perguntas, sem letras miúdas.
           </p>
 
@@ -159,10 +168,10 @@ const Index = () => {
           <Button 
             variant="cta" 
             size="xl" 
-            className="font-bold text-lg py-6 px-10 shadow-cta hover:shadow-cta-hover transition-all"
+            className="w-full sm:w-auto font-bold text-base sm:text-lg py-5 sm:py-6 px-8 sm:px-10 shadow-cta hover:shadow-cta-hover transition-all"
             asChild
           >
-            <a href={checkoutUrl}>
+            <a href={checkoutUrl} onClick={handleCtaClick}>
               SIM, QUERO COMEÇAR AGORA
               <ArrowRight className="ml-2 w-5 h-5" />
             </a>
@@ -170,8 +179,8 @@ const Index = () => {
         </div>
       </main>
 
-      <footer className="bg-muted py-12 border-t border-border">
-        <div className="max-w-[800px] mx-auto px-5 text-center text-xs text-muted-foreground space-y-4">
+      <footer className="bg-muted py-8 sm:py-12 border-t border-border">
+        <div className="max-w-[800px] mx-auto px-4 sm:px-5 text-center text-xs text-muted-foreground space-y-4">
           <p>© 2026 Love Code - Todos os direitos reservados.</p>
           <p>
             Este site não faz parte do site do Facebook ou do Facebook Inc. Além disso, este site NÃO é endossado pelo Facebook de nenhuma maneira. FACEBOOK é uma marca comercial da FACEBOOK, Inc.
