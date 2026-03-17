@@ -117,10 +117,12 @@ const Index = () => {
               variant="cta" 
               size="xl" 
               className="w-full sm:w-auto font-bold text-xl py-8 px-12 shadow-cta hover:shadow-cta-hover transition-all animate-bounce"
-              onClick={handleCheckout}
+              asChild
             >
-              QUERO ACESSO AO MÉTODO AGORA
-              <ArrowRight className="ml-2 w-6 h-6" />
+              <a href={checkoutUrl}>
+                QUERO ACESSO AO MÉTODO AGORA
+                <ArrowRight className="ml-2 w-6 h-6" />
+              </a>
             </Button>
             
             <div className="flex flex-wrap justify-center gap-6 mt-4">
