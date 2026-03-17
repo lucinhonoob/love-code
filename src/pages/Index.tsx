@@ -160,10 +160,12 @@ const Index = () => {
             variant="cta" 
             size="xl" 
             className="font-bold text-lg py-6 px-10 shadow-cta hover:shadow-cta-hover transition-all"
-            onClick={handleCheckout}
+            asChild
           >
-            SIM, QUERO COMEÇAR AGORA
-            <ArrowRight className="ml-2 w-5 h-5" />
+            <a href={checkoutUrl}>
+              SIM, QUERO COMEÇAR AGORA
+              <ArrowRight className="ml-2 w-5 h-5" />
+            </a>
           </Button>
         </div>
       </main>
