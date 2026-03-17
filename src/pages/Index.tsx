@@ -11,9 +11,6 @@ import PurchaseNotification from '@/components/PurchaseNotification';
 const Index = () => {
   const checkoutUrl = "https://pay.cakto.com.br/3fcmq6k_804816";
 
-  const handleCheckout = () => {
-    window.location.href = checkoutUrl;
-  };
 
   return (
     <div className="min-h-screen bg-background text-foreground font-sans selection:bg-red-100 selection:text-red-900">
@@ -120,10 +117,12 @@ const Index = () => {
               variant="cta" 
               size="xl" 
               className="w-full sm:w-auto font-bold text-xl py-8 px-12 shadow-cta hover:shadow-cta-hover transition-all animate-bounce"
-              onClick={handleCheckout}
+              asChild
             >
-              QUERO ACESSO AO MÉTODO AGORA
-              <ArrowRight className="ml-2 w-6 h-6" />
+              <a href={checkoutUrl}>
+                QUERO ACESSO AO MÉTODO AGORA
+                <ArrowRight className="ml-2 w-6 h-6" />
+              </a>
             </Button>
             
             <div className="flex flex-wrap justify-center gap-6 mt-4">
@@ -161,10 +160,12 @@ const Index = () => {
             variant="cta" 
             size="xl" 
             className="font-bold text-lg py-6 px-10 shadow-cta hover:shadow-cta-hover transition-all"
-            onClick={handleCheckout}
+            asChild
           >
-            SIM, QUERO COMEÇAR AGORA
-            <ArrowRight className="ml-2 w-5 h-5" />
+            <a href={checkoutUrl}>
+              SIM, QUERO COMEÇAR AGORA
+              <ArrowRight className="ml-2 w-5 h-5" />
+            </a>
           </Button>
         </div>
       </main>
