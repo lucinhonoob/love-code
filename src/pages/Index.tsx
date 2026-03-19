@@ -10,7 +10,7 @@ import CountdownTimer from '@/components/CountdownTimer';
 import PurchaseNotification from '@/components/PurchaseNotification';
 import DelayedVideoOffer from '@/components/DelayedVideoOffer';
 import OfferIncludes from '@/components/OfferIncludes';
-import confetti from 'canvas-confetti';
+
 
 const Index = () => {
   const checkoutUrl = 'https://pay.cakto.com.br/3fcmq6k_804816';
