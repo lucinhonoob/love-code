@@ -1,5 +1,5 @@
 import { ArrowRight, CheckCircle2, ShieldCheck, Zap } from 'lucide-react';
-import { useEffect, useState } from 'react';
+import { MouseEvent, useEffect, useState } from 'react';
 import { Button } from '@/components/ui/button';
 import TopBar from '@/components/TopBar';
 import VideoPlayer from '@/components/VideoPlayer';
