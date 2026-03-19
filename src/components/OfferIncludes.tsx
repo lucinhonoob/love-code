@@ -1,31 +1,11 @@
 import { CheckCircle2, Gift, PackageOpen } from 'lucide-react';
 
 const bonusItems = [
-  {
-    title: 'Entrevistas Revelação',
-    description: 'Conversas reais com mulheres sobre o que realmente as atrai em um homem.',
-    price: 'R$ 147',
-  },
-  {
-    title: 'Guia do Vita Instantâneo',
-    description: 'Como transformar seu perfil em um imã de matches em menos de 24 horas.',
-    price: 'R$ 97',
-  },
-  {
-    title: 'O Código do Flerte (AudioBook)',
-    description: 'Versão em áudio para você aprender enquanto dirige ou treina.',
-    price: 'R$ 67',
-  },
-  {
-    title: 'Checklist da Abordagem',
-    description: 'O passo a passo exato do que dizer desde o "oi" até o encontro.',
-    price: 'R$ 47',
-  },
-  {
-    title: 'Simulações Reais',
-    description: 'Exemplos práticos de conversas no WhatsApp comentadas passo a passo.',
-    price: 'R$ 197',
-  },
+  { title: 'Entrevistas Revelação', description: 'Conversas reais com mulheres sobre o que realmente as atrai em um homem.', price: 'R$ 147' },
+  { title: 'Guia do Vita Instantâneo', description: 'Como transformar seu perfil em um imã de matches em menos de 24 horas.', price: 'R$ 97' },
+  { title: 'O Código do Flerte (AudioBook)', description: 'Versão em áudio para você aprender enquanto dirige ou treina.', price: 'R$ 67' },
+  { title: 'Checklist da Abordagem', description: 'O passo a passo exato do que dizer desde o "oi" até o encontro.', price: 'R$ 47' },
+  { title: 'Simulações Reais', description: 'Exemplos práticos de conversas no WhatsApp comentadas passo a passo.', price: 'R$ 197' },
 ];
 
 const OfferIncludes = () => {
@@ -36,7 +16,6 @@ const OfferIncludes = () => {
           <p className="mb-3 text-xs font-bold uppercase tracking-[0.28em] text-muted-foreground">
             O QUE VOCÊ VAI RECEBER
           </p>
-
           <div className="rounded-xl border border-border bg-background p-4 sm:p-5">
             <div className="flex items-start gap-3 sm:gap-4">
               <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-secondary text-secondary-foreground sm:h-12 sm:w-12">

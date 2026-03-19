@@ -12,13 +12,10 @@ const AuthorSection = () => {
           <div className="space-y-4 text-center sm:text-left">
             <h4 className="text-xl font-bold text-foreground sm:text-2xl">Especialista em Dinâmicas Sociais</h4>
             <p className="text-base leading-relaxed text-muted-foreground sm:text-lg">
-              Após anos estudando psicologia comportamental e testando na prática o que realmente funciona no mundo real, 
-              desenvolvi o <strong>Código do Flerte</strong>. Meu objetivo é ajudar homens comuns a recuperarem sua 
-              autoconfiança e dominarem a arte da atração de forma natural e autêntica.
+              Após anos estudando psicologia comportamental e testando na prática o que realmente funciona no mundo real, desenvolvi o <strong>Código do Flerte</strong>. Meu objetivo é ajudar homens comuns a recuperarem sua autoconfiança e dominarem a arte da atração de forma natural e autêntica.
             </p>
             <p className="text-base leading-relaxed text-muted-foreground sm:text-lg">
-              Este método não é sobre truques baratos, mas sobre entender a biologia da atração e como se tornar o homem 
-              que as mulheres naturalmente desejam estar por perto.
+              Este método não é sobre truques baratos, mas sobre entender a biologia da atração e como se tornar o homem que as mulheres naturalmente desejam estar por perto.
             </p>
           </div>
         </div>

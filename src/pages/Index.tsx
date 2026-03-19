@@ -127,11 +127,10 @@ const Index = () => {
           <div className="my-8 rounded-2xl border-2 border-green-600 bg-green-50/50 p-6 text-center sm:my-12 sm:p-8">
             <p className="mb-2 text-sm font-bold uppercase tracking-widest text-muted-foreground">OFERTA ESPECIAL DE LANÇAMENTO</p>
             <div className="mb-4 flex items-center justify-center gap-4">
-              <span className="text-xl text-muted-foreground line-through sm:text-2xl">R$ 497,00</span>
-              <span className="text-4xl font-black text-green-600 sm:text-5xl">R$ 97,00</span>
+              <span className="text-xl text-muted-foreground line-through sm:text-2xl">R$ 197,00</span>
+              <span className="text-4xl font-black text-green-600 sm:text-5xl">R$ 37,00</span>
             </div>
             <p className="mb-6 text-xs text-muted-foreground sm:text-sm">Pagamento único. Acesso vitalício e imediato.</p>
-            
             <Button
               variant="cta"
               size="xl"
@@ -219,4 +218,3 @@ const Index = () => {
 
 export default Index;
 
-// Lovable Sync Trigger: Thu Mar 19 19:01:34 EDT 2026
