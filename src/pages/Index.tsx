@@ -219,3 +219,4 @@ const Index = () => {
 
 export default Index;
 
+// Lovable Sync Trigger: Thu Mar 19 19:01:34 EDT 2026
