@@ -37,7 +37,7 @@ const PurchaseNotification = () => {
 
       nextIdRef.current += 1;
       setNotifications((prev) => [newNotification, ...prev].slice(0, 3));
-    }, 15000);
+    }, 80000);
 
     return () => window.clearInterval(interval);
   }, []);
