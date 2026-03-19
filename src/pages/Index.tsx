@@ -24,21 +24,6 @@ const Index = () => {
     return () => window.clearTimeout(timer);
   }, []);
 
-  const handleCheckoutClick = (event: MouseEvent<HTMLAnchorElement>) => {
-    confetti({
-      particleCount: 150,
-      spread: 80,
-      origin: { y: 0.6 },
-      colors: ['#16a34a', '#22c55e', '#4ade80', '#fbbf24', '#f59e0b'],
-    });
-
-    if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) {
-      return;
-    }
-
-    event.preventDefault();
-    window.location.assign(checkoutUrl);
-  };
 
   return (
     <div className="min-h-screen bg-background text-foreground font-sans selection:bg-red-100 selection:text-red-900">
