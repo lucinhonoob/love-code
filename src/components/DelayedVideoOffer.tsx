@@ -4,10 +4,9 @@ import { Button } from '@/components/ui/button';
 
 interface DelayedVideoOfferProps {
   checkoutUrl: string;
-  onCtaClick: (event: React.MouseEvent<HTMLAnchorElement>) => void;
 }
 
-const DelayedVideoOffer = ({ checkoutUrl, onCtaClick }: DelayedVideoOfferProps) => {
+const DelayedVideoOffer = ({ checkoutUrl }: DelayedVideoOfferProps) => {
   return (
     <div className="mt-5 w-full max-w-[760px] animate-in fade-in zoom-in-95 duration-700" aria-live="polite">
       <div className="rounded-2xl border border-border bg-card p-4 shadow-card-hover sm:p-6">
@@ -40,7 +39,7 @@ const DelayedVideoOffer = ({ checkoutUrl, onCtaClick }: DelayedVideoOfferProps) 
             className="w-full font-bold sm:w-auto sm:px-8 motion-safe:animate-pulse"
             asChild
           >
-            <a href={checkoutUrl} onClick={onCtaClick}>
+            <a href={checkoutUrl}>
               QUERO O DESCONTO
               <ArrowRight className="h-5 w-5" />
             </a>

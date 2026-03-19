@@ -1,5 +1,5 @@
 import { ArrowRight, CheckCircle2, ShieldCheck, Zap } from 'lucide-react';
-import { MouseEvent, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Button } from '@/components/ui/button';
 import TopBar from '@/components/TopBar';
 import VideoPlayer from '@/components/VideoPlayer';
@@ -10,7 +10,7 @@ import CountdownTimer from '@/components/CountdownTimer';
 import PurchaseNotification from '@/components/PurchaseNotification';
 import DelayedVideoOffer from '@/components/DelayedVideoOffer';
 import OfferIncludes from '@/components/OfferIncludes';
-import confetti from 'canvas-confetti';
+
 
 const Index = () => {
   const checkoutUrl = 'https://pay.cakto.com.br/3fcmq6k_804816';
@@ -24,21 +24,6 @@ const Index = () => {
     return () => window.clearTimeout(timer);
   }, []);
 
-  const handleCheckoutClick = (event: MouseEvent<HTMLAnchorElement>) => {
-    confetti({
-      particleCount: 150,
-      spread: 80,
-      origin: { y: 0.6 },
-      colors: ['#16a34a', '#22c55e', '#4ade80', '#fbbf24', '#f59e0b'],
-    });
-
-    if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) {
-      return;
-    }
-
-    event.preventDefault();
-    window.location.assign(checkoutUrl);
-  };
 
   return (
     <div className="min-h-screen bg-background text-foreground font-sans selection:bg-red-100 selection:text-red-900">
@@ -59,7 +44,7 @@ const Index = () => {
           </p>
 
           <VideoPlayer />
-          {showVideoOffer && <DelayedVideoOffer checkoutUrl={checkoutUrl} onCtaClick={handleCheckoutClick} />}
+          {showVideoOffer && <DelayedVideoOffer checkoutUrl={checkoutUrl} />}
 
           <p className="mt-4 flex items-center gap-1.5 text-xs font-medium text-muted-foreground sm:text-sm">
             <span className="h-2 w-2 rounded-full bg-topbar animate-pulse" />
@@ -145,7 +130,7 @@ const Index = () => {
               className="w-full px-8 py-7 text-lg font-bold shadow-cta transition-all hover:shadow-cta-hover sm:w-auto sm:px-12 sm:py-8 sm:text-xl animate-bounce"
               asChild
             >
-              <a href={checkoutUrl} onClick={handleCheckoutClick}>
+              <a href={checkoutUrl}>
                 QUERO ACESSO AO MÉTODO AGORA
                 <ArrowRight className="ml-2 h-5 w-5 sm:h-6 sm:w-6" />
               </a>
@@ -183,7 +168,7 @@ const Index = () => {
             className="w-full px-8 py-5 text-base font-bold shadow-cta transition-all hover:shadow-cta-hover sm:w-auto sm:px-10 sm:py-6 sm:text-lg"
             asChild
           >
-            <a href={checkoutUrl} onClick={handleCheckoutClick}>
+            <a href={checkoutUrl}>
               SIM, QUERO COMEÇAR AGORA
               <ArrowRight className="ml-2 h-5 w-5" />
             </a>
