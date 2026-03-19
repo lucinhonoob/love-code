@@ -145,7 +145,7 @@ const Index = () => {
               className="w-full px-8 py-7 text-lg font-bold shadow-cta transition-all hover:shadow-cta-hover sm:w-auto sm:px-12 sm:py-8 sm:text-xl animate-bounce"
               asChild
             >
-              <a href={checkoutUrl} onClick={handleCtaClick}>
+              <a href={checkoutUrl} onClick={handleCheckoutClick}>
                 QUERO ACESSO AO MÉTODO AGORA
                 <ArrowRight className="ml-2 h-5 w-5 sm:h-6 sm:w-6" />
               </a>
