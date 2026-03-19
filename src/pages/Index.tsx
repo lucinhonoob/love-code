@@ -44,7 +44,7 @@ const Index = () => {
           </p>
 
           <VideoPlayer />
-          {showVideoOffer && <DelayedVideoOffer checkoutUrl={checkoutUrl} onCtaClick={handleCheckoutClick} />}
+          {showVideoOffer && <DelayedVideoOffer checkoutUrl={checkoutUrl} />
 
           <p className="mt-4 flex items-center gap-1.5 text-xs font-medium text-muted-foreground sm:text-sm">
             <span className="h-2 w-2 rounded-full bg-topbar animate-pulse" />
