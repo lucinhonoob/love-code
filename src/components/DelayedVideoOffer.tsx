@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 
 interface DelayedVideoOfferProps {
   checkoutUrl: string;
-  onCtaClick: () => void;
+  onCtaClick: (event: React.MouseEvent<HTMLAnchorElement>) => void;
 }
 
 const DelayedVideoOffer = ({ checkoutUrl, onCtaClick }: DelayedVideoOfferProps) => {

@@ -183,7 +183,7 @@ const Index = () => {
             className="w-full px-8 py-5 text-base font-bold shadow-cta transition-all hover:shadow-cta-hover sm:w-auto sm:px-10 sm:py-6 sm:text-lg"
             asChild
           >
-            <a href={checkoutUrl} onClick={handleCtaClick}>
+            <a href={checkoutUrl} onClick={handleCheckoutClick}>
               SIM, QUERO COMEÇAR AGORA
               <ArrowRight className="ml-2 h-5 w-5" />
             </a>
