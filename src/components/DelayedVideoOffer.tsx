@@ -39,7 +39,7 @@ const DelayedVideoOffer = ({ checkoutUrl }: DelayedVideoOfferProps) => {
             className="w-full font-bold sm:w-auto sm:px-8 motion-safe:animate-pulse"
             asChild
           >
-            <a href={checkoutUrl} onClick={onCtaClick}>
+            <a href={checkoutUrl}>
               QUERO O DESCONTO
               <ArrowRight className="h-5 w-5" />
             </a>
