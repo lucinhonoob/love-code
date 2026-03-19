@@ -10,6 +10,7 @@ import CountdownTimer from '@/components/CountdownTimer';
 import PurchaseNotification from '@/components/PurchaseNotification';
 import DelayedVideoOffer from '@/components/DelayedVideoOffer';
 import OfferIncludes from '@/components/OfferIncludes';
+import AuthorSection from '@/components/AuthorSection';
 
 
 const Index = () => {
