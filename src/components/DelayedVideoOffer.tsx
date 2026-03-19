@@ -4,10 +4,9 @@ import { Button } from '@/components/ui/button';
 
 interface DelayedVideoOfferProps {
   checkoutUrl: string;
-  onCtaClick: (event: React.MouseEvent<HTMLAnchorElement>) => void;
 }
 
-const DelayedVideoOffer = ({ checkoutUrl, onCtaClick }: DelayedVideoOfferProps) => {
+const DelayedVideoOffer = ({ checkoutUrl }: DelayedVideoOfferProps) => {
   return (
     <div className="mt-5 w-full max-w-[760px] animate-in fade-in zoom-in-95 duration-700" aria-live="polite">
       <div className="rounded-2xl border border-border bg-card p-4 shadow-card-hover sm:p-6">
