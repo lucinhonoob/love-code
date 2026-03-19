@@ -124,6 +124,26 @@ const Index = () => {
 
           <OfferIncludes />
 
+          <div className="my-8 rounded-2xl border-2 border-green-600 bg-green-50/50 p-6 text-center sm:my-12 sm:p-8">
+            <p className="mb-2 text-sm font-bold uppercase tracking-widest text-muted-foreground">OFERTA ESPECIAL DE LANÇAMENTO</p>
+            <div className="mb-4 flex items-center justify-center gap-4">
+              <span className="text-xl text-muted-foreground line-through sm:text-2xl">R$ 197,00</span>
+              <span className="text-4xl font-black text-green-600 sm:text-5xl">R$ 37,00</span>
+            </div>
+            <p className="mb-6 text-xs text-muted-foreground sm:text-sm">Pagamento único. Acesso vitalício e imediato.</p>
+            <Button
+              variant="cta"
+              size="xl"
+              className="w-full px-8 py-7 text-lg font-bold shadow-cta transition-all hover:shadow-cta-hover sm:w-auto sm:px-12 sm:py-8 sm:text-xl animate-bounce"
+              asChild
+            >
+              <a href={checkoutUrl}>
+                QUERO ACESSO AO MÉTODO AGORA
+                <ArrowRight className="ml-2 h-5 w-5 sm:h-6 sm:w-6" />
+              </a>
+            </Button>
+          </div>
+
           <div className="flex flex-col items-center gap-4 pt-6 pb-4 sm:pt-8">
             <Button
               variant="cta"
