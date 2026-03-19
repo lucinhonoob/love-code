@@ -171,6 +171,7 @@ const Index = () => {
         </article>
 
         <Testimonials />
+        <AuthorSection />
         <FAQ />
 
         <div className="mx-auto mt-12 max-w-[700px] border-t border-border pt-8 text-center sm:mt-16 sm:pt-12">
