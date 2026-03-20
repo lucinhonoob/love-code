@@ -144,28 +144,14 @@ const Index = () => {
             </Button>
           </div>
 
-          <div className="flex flex-col items-center gap-4 pt-6 pb-4 sm:pt-8">
-            <Button
-              variant="cta"
-              size="xl"
-              className="w-full px-8 py-7 text-lg font-bold shadow-cta transition-all hover:shadow-cta-hover sm:w-auto sm:px-12 sm:py-8 sm:text-xl animate-bounce"
-              asChild
-            >
-              <a href={checkoutUrl}>
-                QUERO ACESSO AO MÉTODO AGORA
-                <ArrowRight className="ml-2 h-5 w-5 sm:h-6 sm:w-6" />
-              </a>
-            </Button>
-
-            <div className="mt-4 flex flex-wrap justify-center gap-4 sm:gap-6">
-              <div className="flex items-center gap-1.5 text-xs text-muted-foreground sm:text-sm">
-                <ShieldCheck className="h-4 w-4 text-green-600" />
-                Compra 100% Segura
-              </div>
-              <div className="flex items-center gap-1.5 text-xs text-muted-foreground sm:text-sm">
-                <CheckCircle2 className="h-4 w-4 text-green-600" />
-                Acesso Imediato
-              </div>
+          <div className="flex flex-wrap justify-center gap-4 pt-6 sm:gap-6 sm:pt-8">
+            <div className="flex items-center gap-1.5 text-xs text-muted-foreground sm:text-sm">
+              <ShieldCheck className="h-4 w-4 text-green-600" />
+              Compra 100% Segura
+            </div>
+            <div className="flex items-center gap-1.5 text-xs text-muted-foreground sm:text-sm">
+              <CheckCircle2 className="h-4 w-4 text-green-600" />
+              Acesso Imediato
             </div>
           </div>
         </article>
