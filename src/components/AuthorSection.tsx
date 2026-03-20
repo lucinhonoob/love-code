@@ -1,4 +1,4 @@
-import { User } from 'lucide-react';
+
 
 const AuthorSection = () => {
   return (
