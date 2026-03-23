@@ -7,7 +7,7 @@ const AuthorSection = () => {
         <h3 className="mb-8 text-center text-2xl font-bold sm:text-3xl">Quem criou o método?</h3>
         <div className="flex flex-col items-center gap-6 sm:flex-row sm:items-start sm:gap-8">
           <img
-            src="https://i.imgur.com/RmNTQRw.png"
+            src="https://i.imgur.com/gR71Swk.png"
             alt="Especialista em Dinâmicas Sociais"
             className="h-32 w-32 shrink-0 rounded-full object-cover shadow-lg sm:h-40 sm:w-40"
           />
