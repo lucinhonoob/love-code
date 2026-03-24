@@ -97,6 +97,11 @@ All colors MUST be HSL.
     --sidebar-accent-foreground: 240 4.8% 95.9%;
     --sidebar-border: 240 3.7% 15.9%;
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    --game-bg: 220 15% 8%;
+    --game-surface: 220 12% 14%;
+    --game-gold: 43 80% 60%;
+    --game-burgundy: 345 60% 35%;
   }
 }
 

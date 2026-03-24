@@ -26,6 +26,12 @@ export default {
           hover: "hsl(var(--cta-hover))",
           foreground: "hsl(var(--cta-foreground))",
         },
+        game: {
+          bg: "hsl(var(--game-bg))",
+          surface: "hsl(var(--game-surface))",
+          gold: "hsl(var(--game-gold))",
+          burgundy: "hsl(var(--game-burgundy))",
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
