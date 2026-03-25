@@ -1,20 +1,16 @@
 
 
-# Substituir emoji por imagens da Sofia
-
-## O que será feito
-Substituir o emoji placeholder (👩‍💻) pela imagem do Imgur como avatar da Sofia, e trocar a imagem quando o nível de sinergia atingir 100%.
-
-## Observação importante
-Os dois links fornecidos são idênticos (`https://imgur.com/D6a6FCG`). Vou usar a URL direta da imagem (`https://i.imgur.com/D6a6FCG.png`) para ambos os estados. Se você tiver uma imagem diferente para o estado de vitória, me envie o link correto depois.
+# Substituir vídeo YouTube por vídeo local
 
 ## Alterações
 
-### `src/components/game/CharacterPanel.tsx`
-- Remover o emoji fallback e usar a imagem `https://i.imgur.com/D6a6FCG.png` como avatar padrão
-- Quando `won === true`, trocar para a imagem de vitória (mesmo link por enquanto)
-- Passar a lógica de seleção de imagem baseada no prop `won`
+### 1. Copiar o vídeo para `public/videos/`
+- Copiar `user-uploads://VSLATUALComp.mp4` para `public/videos/VSLATUALComp.mp4`
+- Usar pasta `public` pois vídeos são grandes demais para bundling via `src/assets`
 
-### `src/pages/GamePage.tsx`
-- Nenhuma alteração necessária — já passa `won` para o `CharacterPanel`
+### 2. `src/components/VideoPlayer.tsx`
+- Remover o iframe do YouTube
+- Substituir por tag `<video>` com `controls`, `playsinline`, e `preload="metadata"`
+- Manter o mesmo container com `rounded-2xl`, `overflow-hidden`, `shadow-video` e aspect ratio 16:9
+- Source: `/videos/VSLATUALComp.mp4`
 
