@@ -1,14 +1,11 @@
 
 
-# Atualizar textos dos Bônus Exclusivos
+# Alterar preço riscado no botão de oferta atrasada
 
-## Alteração única em `src/components/OfferIncludes.tsx`
+## Alteração
+No arquivo `src/components/DelayedVideoOffer.tsx`:
+- Linha 21: trocar `R$ 47,00` por `R$ 197,00` (preço riscado)
+- Linha 27: atualizar o badge de desconto de `21% OFF` para `81% OFF` (desconto real de R$197 para R$37)
 
-Atualizar o array `bonusItems` com os novos títulos e descrições, mantendo os valores e "Grátis":
-
-1. "Entrevistas Revelação" — "Conversas reais com mulheres sobre o que realmente as atrai em um homem." — R$ 147
-2. "Guia do App de Namoro" — "Como transformar seu perfil em um imã de matches em menos de vinte e quatro horas." — R$ 97
-3. "O Código do Flerte em AudioBook" — "Versão em áudio para você aprender enquanto dirige ou treina." — R$ 67
-4. "Checklist da Abordagem" — "O passo a passo exato do que dizer desde o \"oi\" até o encontro." — R$ 47
-5. "Simulações Reais" — "Exemplos práticos de conversas no WhatsApp comentadas passo a passo." — R$ 197
+O preço final (R$ 37,00) permanece inalterado.
 
