@@ -24,7 +24,7 @@ const DelayedVideoOffer = ({ checkoutUrl }: DelayedVideoOfferProps) => {
                 R$ 37,00
               </span>
               <span className="rounded-full border border-border bg-background px-3 py-1 text-xs font-bold uppercase tracking-[0.16em] text-foreground">
-                21% OFF
+                81% OFF
               </span>
             </div>
 
