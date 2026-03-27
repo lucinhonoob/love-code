@@ -18,7 +18,7 @@ const DelayedVideoOffer = ({ checkoutUrl }: DelayedVideoOfferProps) => {
 
             <div className="flex flex-wrap items-end gap-3">
               <span className="text-sm font-semibold text-muted-foreground line-through sm:text-base">
-                R$ 47,00
+                R$ 197,00
               </span>
               <span className="text-3xl font-extrabold leading-none tracking-tight text-foreground sm:text-4xl">
                 R$ 37,00
