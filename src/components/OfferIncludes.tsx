@@ -2,8 +2,8 @@ import { CheckCircle2, Gift, PackageOpen } from 'lucide-react';
 
 const bonusItems = [
   { title: 'Entrevistas Revelação', description: 'Conversas reais com mulheres sobre o que realmente as atrai em um homem.', price: 'R$ 147' },
-  { title: 'Guia do Vita Instantâneo', description: 'Como transformar seu perfil em um imã de matches em menos de 24 horas.', price: 'R$ 97' },
-  { title: 'O Código do Flerte (AudioBook)', description: 'Versão em áudio para você aprender enquanto dirige ou treina.', price: 'R$ 67' },
+  { title: 'Guia do App de Namoro', description: 'Como transformar seu perfil em um imã de matches em menos de vinte e quatro horas.', price: 'R$ 97' },
+  { title: 'O Código do Flerte em AudioBook', description: 'Versão em áudio para você aprender enquanto dirige ou treina.', price: 'R$ 67' },
   { title: 'Checklist da Abordagem', description: 'O passo a passo exato do que dizer desde o "oi" até o encontro.', price: 'R$ 47' },
   { title: 'Simulações Reais', description: 'Exemplos práticos de conversas no WhatsApp comentadas passo a passo.', price: 'R$ 197' },
 ];
