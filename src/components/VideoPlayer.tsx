@@ -3,7 +3,7 @@ import { useState, useRef, useEffect } from 'react';
 const VideoPlayer = () => {
   const [isStarted, setIsStarted] = useState(false);
   const iframeRef = useRef<HTMLIFrameElement>(null);
-  const videoId = "5VzJmjF2MYw";
+  const videoId = "Ex6rnYlYdv8";
   
   // YouTube embed URL with parameters to minimize branding
   const baseUrl = `https://www.youtube.com/embed/${videoId}?controls=0&modestbranding=1&rel=0&showinfo=0&iv_load_policy=3&disablekb=1&playsinline=1&color=white&fs=0`;
