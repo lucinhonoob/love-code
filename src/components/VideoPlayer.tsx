@@ -109,12 +109,12 @@ const VideoPlayer = () => {
               }}
               className="absolute inset-0 z-20 flex items-center justify-center bg-black/20 cursor-pointer group transition-all duration-300 hover:bg-black/10"
             >
-              <div className="w-20 h-20 flex items-center justify-center rounded-full bg-red-600 text-white shadow-2xl transform transition-transform group-hover:scale-110">
+              <div className="w-28 h-28 flex items-center justify-center rounded-full bg-red-600 text-white shadow-2xl transform transition-transform group-hover:scale-110">
                 <svg 
                   xmlns="http://www.w3.org/2000/svg" 
                   viewBox="0 0 24 24" 
                   fill="currentColor" 
-                  className="w-10 h-10 ml-1"
+                  className="w-14 h-14 ml-1"
                 >
                   <path fillRule="evenodd" d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z" clipRule="evenodd" />
                 </svg>
