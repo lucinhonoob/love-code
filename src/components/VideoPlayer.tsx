@@ -3,7 +3,7 @@ import { useState, useRef, useEffect } from 'react';
 const VideoPlayer = () => {
   const [isStarted, setIsStarted] = useState(false);
   const iframeRef = useRef<HTMLIFrameElement>(null);
-  const videoId = "Ex6rnYlYdv8";
+  const videoId = "yd3z00IP6EA";
   
   // YouTube embed URL with parameters to minimize branding
   const baseUrl = `https://www.youtube.com/embed/${videoId}?controls=0&modestbranding=1&rel=0&showinfo=0&iv_load_policy=3&disablekb=1&playsinline=1&color=white&fs=0`;
@@ -52,8 +52,8 @@ const VideoPlayer = () => {
   };
 
   return (
-    <div className="w-full max-w-[760px] rounded-2xl overflow-hidden shadow-video bg-black">
-      <div style={{ position: 'relative', width: '100%', paddingBottom: '56.25%', overflow: 'hidden' }}>
+    <div className="w-full max-w-[400px] rounded-2xl overflow-hidden shadow-video bg-black">
+      <div style={{ position: 'relative', width: '100%', paddingBottom: '177.78%', overflow: 'hidden' }}>
         {/* Main YouTube iframe - displayed at normal size */}
         <iframe
           ref={iframeRef}
