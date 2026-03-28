@@ -109,7 +109,7 @@ const VideoPlayer = () => {
               }}
               className="absolute inset-0 z-20 flex items-center justify-center bg-black/20 cursor-pointer group transition-all duration-300 hover:bg-black/10"
             >
-              <div className="w-20 h-20 flex items-center justify-center rounded-full bg-red-600 text-white shadow-2xl transform transition-transform group-hover:scale-110">
+              <div className="w-28 h-28 flex items-center justify-center rounded-full bg-red-600 text-white shadow-2xl transform transition-transform group-hover:scale-110">
                 <svg 
                   xmlns="http://www.w3.org/2000/svg" 
                   viewBox="0 0 24 24" 
