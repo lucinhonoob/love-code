@@ -52,7 +52,7 @@ const VideoPlayer = () => {
   };
 
   return (
-    <div className="w-full max-w-[760px] rounded-2xl overflow-hidden shadow-video bg-black">
+    <div className="w-full max-w-[400px] rounded-2xl overflow-hidden shadow-video bg-black">
       <div style={{ position: 'relative', width: '100%', paddingBottom: '56.25%', overflow: 'hidden' }}>
         {/* Main YouTube iframe - displayed at normal size */}
         <iframe
