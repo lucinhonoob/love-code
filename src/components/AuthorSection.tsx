@@ -12,7 +12,7 @@ const AuthorSection = () => {
             className="h-32 w-32 shrink-0 rounded-full object-cover shadow-lg sm:h-40 sm:w-40"
           />
           <div className="space-y-4 text-center sm:text-left">
-            <h4 className="text-xl font-bold text-foreground sm:text-2xl">Especialista em Dinâmicas Sociais</h4>
+            <h4 className="text-xl font-bold text-foreground sm:text-2xl">Camilla — Especialista em Dinâmicas Sociais</h4>
             <p className="text-base leading-relaxed text-muted-foreground sm:text-lg">
               Após anos estudando psicologia comportamental e testando na prática o que realmente funciona no mundo real, desenvolvi o <strong>Código do Flerte</strong>. Meu objetivo é ajudar homens comuns a recuperarem sua autoconfiança e dominarem a arte da atração de forma natural e autêntica.
             </p>
