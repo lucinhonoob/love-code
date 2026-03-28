@@ -1,11 +1,12 @@
 
 
-# Alterar preço riscado no botão de oferta atrasada
+# Alterar vídeo para formato vertical (Shorts)
 
-## Alteração
-No arquivo `src/components/DelayedVideoOffer.tsx`:
-- Linha 21: trocar `R$ 47,00` por `R$ 197,00` (preço riscado)
-- Linha 27: atualizar o badge de desconto de `21% OFF` para `81% OFF` (desconto real de R$197 para R$37)
+## Alterações em `src/components/VideoPlayer.tsx`
 
-O preço final (R$ 37,00) permanece inalterado.
+1. **Video ID**: Trocar `"Ex6rnYlYdv8"` por `"yd3z00IP6EA"`
+2. **Aspect ratio**: Trocar `paddingBottom: '56.25%'` (16:9) por `paddingBottom: '177.78%'` (9:16 vertical)
+3. **Max-width**: Reduzir `max-w-[760px]` para algo como `max-w-[400px]` para o formato vertical não ficar gigante
+
+Nenhuma outra alteração será feita.
 
