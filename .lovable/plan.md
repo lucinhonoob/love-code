@@ -1,12 +1,11 @@
 
 
-# Alterar vídeo para formato vertical (Shorts)
+# Corrigir data no TopBar para mostrar a data de hoje
 
-## Alterações em `src/components/VideoPlayer.tsx`
+## Alteração em `src/components/TopBar.tsx`
 
-1. **Video ID**: Trocar `"Ex6rnYlYdv8"` por `"yd3z00IP6EA"`
-2. **Aspect ratio**: Trocar `paddingBottom: '56.25%'` (16:9) por `paddingBottom: '177.78%'` (9:16 vertical)
-3. **Max-width**: Reduzir `max-w-[760px]` para algo como `max-w-[400px]` para o formato vertical não ficar gigante
+O código atual usa `tomorrow.setDate(tomorrow.getDate() + 1)` para calcular a data de amanhã. Remover essa linha para que exiba a data de **hoje** (29 de março de 2026).
 
-Nenhuma outra alteração será feita.
+- Linha ~13: remover `tomorrow.setDate(tomorrow.getDate() + 1);`
+- Renomear a variável de `tomorrow` para `today` para clareza
 
