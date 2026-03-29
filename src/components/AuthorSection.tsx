@@ -6,11 +6,14 @@ const AuthorSection = () => {
       <div className="mx-auto max-w-[700px]">
         <h3 className="mb-8 text-center text-2xl font-bold sm:text-3xl">Quem criou o método?</h3>
         <div className="flex flex-col items-center gap-6 sm:flex-row sm:items-start sm:gap-8">
-          <img
-            src="https://i.imgur.com/gR71Swk.png"
-            alt="Especialista em Dinâmicas Sociais"
-            className="h-32 w-32 shrink-0 rounded-full object-cover shadow-lg sm:h-40 sm:w-40"
-          />
+          <div className="flex flex-col items-center shrink-0">
+            <img
+              src="https://i.imgur.com/gR71Swk.png"
+              alt="Especialista em Dinâmicas Sociais"
+              className="h-32 w-32 rounded-full object-cover shadow-lg sm:h-40 sm:w-40"
+            />
+            <span className="mt-2 text-sm text-muted-foreground font-medium">@camylia_flerte</span>
+          </div>
           <div className="space-y-4 text-center sm:text-left">
             <h4 className="text-xl font-bold text-foreground sm:text-2xl">Camilla — Especialista em Dinâmicas Sociais</h4>
             <p className="text-base leading-relaxed text-muted-foreground sm:text-lg">
