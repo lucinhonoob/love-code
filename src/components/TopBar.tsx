@@ -8,13 +8,11 @@ const TopBar = () => {
   useEffect(() => {
     // Update date dynamically
     const updateDate = () => {
-      const tomorrow = new Date();
-      tomorrow.setDate(tomorrow.getDate() + 1);
-      tomorrow.setHours(0, 0, 0, 0);
+      const today = new Date();
       
-      const day = tomorrow.getDate();
-      const month = tomorrow.getMonth() + 1;
-      const year = tomorrow.getFullYear();
+      const day = today.getDate();
+      const month = today.getMonth() + 1;
+      const year = today.getFullYear();
       
       setCurrentDate(`${day} de março de ${year}`);
     };
